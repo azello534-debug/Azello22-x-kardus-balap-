@@ -1,0 +1,213 @@
+/* --- RESET DASAR --- */
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.controller-container {
+    width: 360px; 
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px; 
+}
+
+/* --- Header Merah (Area Judul) --- */
+.header-box {
+    background-color: #e60000; /* Merah Solid */
+    color: white;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    /* JIKA INGIN MENGGANTI DENGAN GAMBAR LOGO KARDUS BALAP X AZELLO22: */
+    /* background-image: url('URL_KE_GAMBAR_LOGO_ANDA.png'); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* height: 80px;  */
+}
+.header-title {
+    font-size: 18px; /* Sedikit dikecilkan agar muat di 2 baris */
+    margin: 0;
+    font-weight: bold;
+}
+.header-subtitle {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+.track-info-top {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+}
+.track-info-bottom {
+    font-size: 12px;
+    margin: 2px 0 0 0;
+}
+/* --- Akhir Header Merah --- */
+
+/* Area Playlist (Kotak Abu-abu Besar) */
+.playlist-area {
+    background-color: #cccccc;
+    min-height: 150px; 
+    max-height: 200px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow-y: auto;
+    padding: 5px;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+}
+.empty-message {
+    text-align: center;
+    color: #666;
+    padding-top: 50px;
+}
+.track-item {
+    padding: 8px;
+    margin-bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.track-item.active {
+    background-color: #e60000;
+    color: white;
+    font-weight: bold;
+}
+
+/* Kontrol Kecil */
+.control-group-small {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8px;
+}
+.btn-small {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    margin: 0 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    flex-grow: 1;
+}
+
+/* Kontrol Play/Stop/Navigasi (Tombol Bulat) */
+.play-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+.btn-round {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 5px;
+    border-radius: 50%; 
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.btn-round.play, .btn-round.stop {
+    width: 75px;
+    height: 75px;
+}
+.btn-round:active {
+    transform: scale(0.95);
+    background-color: #555;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #333;
+}
+.time-display {
+    width: 30px; 
+    text-align: center;
+}
+#progressBar {
+    flex-grow: 1;
+    margin: 0 5px;
+    accent-color: #e60000; 
+}
+
+/* Kontrol Volume */
+.volume-control-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.btn-vol {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#volumeBar {
+    flex-grow: 1;
+    margin: 0 10px;
+    accent-color: #e60000; 
+}
+.track-count {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Tombol Add Songs (Merah Besar) */
+.btn-add-songs {
+    background-color: #e60000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+.btn-add-songs i {
+    margin-right: 8px;
+}
+
+.footer.drag-info {
+    color: #666;
+    padding: 5px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-bottom {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
